@@ -22,7 +22,7 @@ function add() {
 }
 
 function uploadBackground() {
-	ctx.drawImage(background_imgTag,0,0,canvas.width,canvas.heigth);
+	ctx.drawImage(background_imgTag,0,0,canvas.width,canvas.height);
 
 }
 
@@ -76,7 +76,7 @@ function up()
 
 function down()
 {
-	if(greencar_y <=0)
+	if(greencar_y <=235)
 	{greencar_y=greencar_y+10};
 	uploadBackground();
 	uploadGreenCar();
@@ -84,14 +84,14 @@ function down()
 
 function left()
 {
-	if(greencar_x >=225)
+	if(greencar_x >=215)
 	{greencar_x=greencar_x-10};
 	uploadBackground();
 	uploadGreenCar();
 }
 function right()
 {
-	if(greencar_x >=225)
+	if(greencar_x <=755)
 	{greencar_x=greencar_x+10};
 	uploadBackground();
 	uploadGreenCar();
